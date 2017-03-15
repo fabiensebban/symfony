@@ -1,0 +1,15 @@
+parameters:
+#    sdz_blog.example.class: Sdz\BlogBundle\Example
+
+services:
+    sdz_blog.antispam:
+        class: Sdz\BlogBundle\Antispam\SdzAntispam
+        arguments: [@mailer, %locale%, 3]
+
+#  @mailer  ==> service utilisé avec sdz_blog.antispam
+#  %locale% ==> paramètre locale pour récupérer la langue
+#  3        ==> aucune importance
+
+#    sdz_blog.example:
+#        class: %sdz_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

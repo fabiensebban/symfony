@@ -1,0 +1,22 @@
+{% extends "SdzBlogBundle::layout.html.twig" %}
+
+{% block title %} Ajouter un article - {{ parent() }} {% endblock %}
+
+{% block sdzblog_body %}
+
+    <h2>Ajouter un article</h2>
+
+    {% include "SdzBlogBundle:Blog:formulaire.html.twig" %}
+
+    <p>
+        Vous créez un nouvelle article.
+    </p>
+
+    <p>
+        <a href="" class="btn">
+            <i class="icon-inbox"></i>
+            Sauvegarder
+        </a>
+    </p>
+
+{% endblock %}
